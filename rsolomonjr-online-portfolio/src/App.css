@@ -11,6 +11,7 @@ body {
   background-color: midnightblue;
   color: #fff;
   display: block;
+  overflow-x: hidden;
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -22,6 +23,9 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
+
+h1{ margin: 2rem 0} 
+
 #root, #__next {
   isolation: isolate;
 }
@@ -30,4 +34,37 @@ main{
   margin: 0 auto;
 }
 
+.p-2 {
+  padding: .5rem!important;
+}
 
+ /* Add padding above the cards */
+ .row {
+  padding: 1rem;
+}
+
+/* Make the cards break to a column at 728px */
+@media (max-width: 990px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  ul.navbar-nav {
+    position: fixed;
+    bottom: 10px;
+    background-color: #fff;
+    text-align: center;
+    width: 13%;
+  }
+  ul.navbar-nav li {
+    padding: 0 .25em;
+  }
+}
