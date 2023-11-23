@@ -1,6 +1,9 @@
 import "./App.css";
 import infosite from "./assets/infosite.jpeg";
 import brandplay from "./assets/brandplay.jpeg";
+import creamofthecrop from './assets/creamofthecrop.jpeg';
+import longchamp from './assets/longchamp.jpeg';
+
 function App() {
   return (
     <>
@@ -40,7 +43,7 @@ function App() {
             </div>
           </div>
           <ul className="navbar-nav flex-row flex-wrap ms-md-auto me-3">
-            <li className="nav-item col-4">
+            <li className="nav-item col-lg-4">
               <a
                 href="https://github.com/rsolomonjr"
                 target="_blank"
@@ -59,7 +62,7 @@ function App() {
                 </svg>
               </a>
             </li>
-            <li className="nav-item col-4">
+            <li className="nav-item col-lg-4">
               <a
                 href="https://twitter.com/rodneysolomonjr"
                 target="_blank"
@@ -78,7 +81,7 @@ function App() {
                 </svg>
               </a>
             </li>
-            <li className="nav-item col-4">
+            <li className="nav-item col-lg-4">
               <a
                 href="https://www.linkedin.com/in/rodneysolomonjr/"
                 target="_blank"
@@ -123,7 +126,31 @@ function App() {
               <div className="card-body">
                 <h5 className="card-title">Medscape</h5>
                 <p className="card-text">
-                  Video site built with HTML, CSS, JSON.
+                  Video site built with HTML, CSS, JSON, jQuery.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-6">
+            <div className="card">
+              <img src={creamofthecrop} alt="" />
+              <div className="card-body">
+                <h5 className="card-title">C.R.E.A.M. of the Crop, Maryland</h5>
+                <p className="card-text">
+                  WordPress and PHP
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6">
+            <div className="card">
+             <img src={longchamp} alt="" />
+              <div className="card-body">
+                <h5 className="card-title">Longchamp Charities</h5>
+                <p className="card-text">
+                  WordPress, PHP, jQuery, Video
                 </p>
               </div>
             </div>

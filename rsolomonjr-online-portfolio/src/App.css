@@ -1,10 +1,14 @@
 /* RESET */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
 }
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -13,44 +17,60 @@ body {
   display: block;
   overflow-x: hidden;
 }
-img, picture, video, canvas, svg {
+
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-h1{ margin: 2rem 0} 
+h1 {
+  margin: 2rem 0;
+}
 
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
-main{ 
+main {
   margin: 0 auto;
 }
 
-.p-2 {
-  padding: .5rem!important;
-}
-
- /* Add padding above the cards */
- .row {
+/* Add padding above the cards */
+.row {
   padding: 1rem;
 }
 
 /* Make the cards break to a column at 728px */
 @media (max-width: 990px) {
+  
   .row {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 0;
+    padding: 0 1rem
   }
 
   .card {
@@ -60,11 +80,13 @@ main{
   ul.navbar-nav {
     position: fixed;
     bottom: 10px;
-    background-color: #fff;
-    text-align: center;
-    width: 13%;
+    background: transparent;
+    width: 33%;
+    display: flex;
+    justify-content: center;
   }
+
   ul.navbar-nav li {
-    padding: 0 .25em;
+    padding: 0 0.25em;
   }
 }
