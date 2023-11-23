@@ -1,10 +1,14 @@
 import "./App.css";
 import infosite from "./assets/infosite.jpeg";
+import creamofthecrop from "./assets/creamofthecrop.jpeg";
 import brandplay from "./assets/brandplay.jpeg";
-import creamofthecrop from './assets/creamofthecrop.jpeg';
-import longchamp from './assets/longchamp.jpeg';
+import longchamp from "./assets/longchamp.jpeg";
+import lighthouse from "./assets/light-house-haiit.png";
+import healingharm from "./assets/healingharm.png";
+import yolanda from "./assets/yolanda-solomon-site.png";
+import starter_tool from "./assets/infosite-starter-tool.png";
 
-function App() {
+const App = () => {
   return (
     <>
       <main>
@@ -88,9 +92,16 @@ function App() {
                 rel="noreferrer"
                 className="nav-link"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
-  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
-</svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  className="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
+                </svg>
               </a>
             </li>
           </ul>
@@ -104,7 +115,7 @@ function App() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={infosite} alt="" />
+                <img src={infosite} />
               </a>
               <div className="card-body">
                 <h5 className="card-title">Medscape</h5>
@@ -135,23 +146,91 @@ function App() {
         <div className="row">
           <div className="col-sm-6">
             <div className="card">
-              <img src={creamofthecrop} alt="" />
+              <a
+                href="https://rsolomonjr.dev/starter.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={starter_tool} alt="" />
+              </a>
               <div className="card-body">
-                <h5 className="card-title">C.R.E.A.M. of the Crop, Maryland</h5>
+                <h5 className="card-title">Infosite Starter Tool</h5>
                 <p className="card-text">
-                  WordPress and PHP
+                  JSON Package Builder made with jQuery, JavaScript, HTML, CSS.
                 </p>
               </div>
             </div>
           </div>
           <div className="col-sm-6">
             <div className="card">
-             <img src={longchamp} alt="" />
+              <a
+                href="https://yolandasolomon.site"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={yolanda} alt="" />
+              </a>
+              <div className="card-body">
+                <h5 className="card-title">Yolanda Solomon</h5>
+                <p className="card-text">WordPress site.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-6">
+            <div className="card">
+              <a
+                href="https://www.thelighthousehaiti.org/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={lighthouse} alt="" />
+              </a>
+              <div className="card-body">
+                <h5 className="card-title">Light House Haiti</h5>
+                <p className="card-text">
+                  Developer Mode Squarespace site with custom CSS and graphic
+                  design.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6">
+            <div className="card">
+              <a
+                href="https://www.healingharm.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={healingharm} alt="" />
+              </a>
+              <div className="card-body">
+                <h5 className="card-title">Healing Harm</h5>
+                <p className="card-text">
+                  Developer Mode Squarespace site with custom CSS and graphic
+                  design.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-6">
+            <div className="card">
+              <img src={creamofthecrop} alt="" />
+              <div className="card-body">
+                <h5 className="card-title">C.R.E.A.M of the Crop, Maryland</h5>
+                <p className="card-text">Wordpress site.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6">
+            <div className="card">
+              <img src={longchamp} alt="" />
               <div className="card-body">
                 <h5 className="card-title">Longchamp Charities</h5>
-                <p className="card-text">
-                  WordPress, PHP, jQuery, Video
-                </p>
+                <p className="card-text">Wordpress site.</p>
               </div>
             </div>
           </div>
@@ -159,6 +238,6 @@ function App() {
       </main>
     </>
   );
-}
+};
 
 export default App;
