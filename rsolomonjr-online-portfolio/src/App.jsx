@@ -33,12 +33,12 @@ function App() {
                 >
                   Projects
                 </a>
-                <a className="nav-link" href="#">
+                {/* <a className="nav-link" href="#">
                   Recommendations
                 </a>
                 <a className="nav-link" href="#">
                   Contact
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
