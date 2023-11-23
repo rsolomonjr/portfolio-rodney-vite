@@ -10,5 +10,6 @@ Includes:
 - NPM
 - CSS3
 - React Testing
+- Netflify Deployment
 
 https://rodneysolomonjr.net
