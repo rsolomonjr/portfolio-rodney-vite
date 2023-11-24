@@ -11,5 +11,6 @@
   },
   "devDependencies": {
     "webpack": "^5.89.0"
-  }
+  },
+  "exclude": ["react-obfuscate"]
 }

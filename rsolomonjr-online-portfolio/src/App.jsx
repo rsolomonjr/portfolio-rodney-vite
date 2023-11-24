@@ -20,7 +20,7 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window > 300) {
+      if (window.scrollY > 300) {
         setShowButton(true);
       } else {
         setShowButton(false);
