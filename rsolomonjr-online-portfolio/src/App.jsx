@@ -41,7 +41,7 @@ const App = () => {
       <main className="pb-5">
         <nav className="navbar navbar-expand-lg bg-body-tertiary bd-navbar sticky-top">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand">
               RS
             </a>
             <button
