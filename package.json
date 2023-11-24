@@ -1,11 +1,13 @@
 {
   "dependencies": {
     "bootstrap-icons": "^1.11.2",
+    "react-obfuscate": "^3.6.9",
     "react-router-dom": "^6.20.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "^5.0.1",
     "require": "^2.4.20",
-    "require-context": "^1.1.0"
+    "require-context": "^1.1.0",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "webpack": "^5.89.0"

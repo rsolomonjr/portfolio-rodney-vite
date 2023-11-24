@@ -1,4 +1,5 @@
 import "./App.css";
+
 import infosite from "./assets/infosite.jpeg";
 import creamofthecrop from "./assets/creamofthecrop.jpeg";
 import brandplay from "./assets/brandplay.jpeg";
@@ -7,12 +8,63 @@ import lighthouse from "./assets/light-house-haiit.png";
 import healingharm from "./assets/healingharm.png";
 import yolanda from "./assets/yolanda-solomon-site.png";
 import starter_tool from "./assets/infosite-starter-tool.png";
-import rodneyheadshot from "./assets/rodney.jpg"
+import rodneyheadshot from "./assets/rodney.jpg";
+
+import Obfuscate from 'react-obfuscate';
+
+import { useEffect, useState } from "react";
+
 
 const App = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  // This function will scroll the window to the top 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // for smoothly scrolling
+    });
+  };  
+
+  const [addPadding, setAddPadding] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+  const fixAnchor = () => {
+    const projectsElement = document.getElementById('projects');
+
+    if (projectsElement) {
+      setAddPadding(true);
+      window.scrollTo({
+        top: projectsElement.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+
+  const projectsStyle = {
+    paddingBottom: addPadding ? '8em' : '0',
+  };
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+    setAddPadding(false); // Remove the margin when the menu is toggled
+  };
+
   return (
     <>
-      <main>
+      <main className="pb-5">
         <nav className="navbar navbar-expand-lg bg-body-tertiary bd-navbar sticky-top">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
@@ -26,17 +78,26 @@ const App = () => {
               aria-controls="navbarNavAltMarkup"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              onClick={handleMenuToggle}
             >
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
                 <a
-                  className="nav-link active"
+                  className="nav-link"
                   aria-current="page"
-                  href="index.html"
+                  href="#projects" 
+                  onClick={fixAnchor}
                 >
                   Projects
+                </a>
+                <a
+                  className="nav-link"
+                  aria-current="page"
+                  href="/#contact"
+                >
+                  Contact Me
                 </a>
                 {/* <a className="nav-link" href="#">
                   About Me 
@@ -107,25 +168,32 @@ const App = () => {
             </li>
           </ul>
         </nav>
-        
         {/* About Me */}
 
-        <div className="row justify-content-center mt-3">
+        <div className="row justify-content-center mt-3 mb-3">
           <div className="col-lg-8 d-flex justify-content-around align-items-center">
             <div className="headshot w-25">
-             <img src={rodneyheadshot} className="img-fluid img-thumbnail rounded-circle"/>
+              <img
+                src={rodneyheadshot}
+                className="img-fluid img-thumbnail rounded-circle"
+              />
             </div>
             <div className="headshot-copy col-lg-6">
               <h2>About Me</h2>
-              <p>I am a front end developer with ten years of experience in various industries. Having advanced to a Lead/SME, I am seeking full-time front end roles with the objective of advancing to a full-stack engineer.</p>
+              <p>
+                I am a front end developer with ten years of experience in
+                various industries. Having advanced to a Lead/SME, I am seeking
+                full-time front end roles with the objective of advancing to a
+                full-stack engineer.
+              </p>
             </div>
           </div>
         </div>
 
         {/* Projects */}
-
+        <div id="projects" className="mb-2" style={projectsStyle}>&nbsp;</div>
         <div className="row">
-          <h1>Projects</h1>
+          <h1 className="mt-0">Projects</h1>
           <div className="col-sm-6">
             <div className="card">
               <a
@@ -253,7 +321,23 @@ const App = () => {
             </div>
           </div>
         </div>
+
+        {/* Contact Me */}
+        <div id="contact"></div>
+        <div className="mt-5 d-flex justify-content-center">
+        <Obfuscate email="contact@rodneysolomonjr.net" className="mx-auto"  headers={{cc: 'profession3x@yahoo.com',subject: 'Contact from Portfolio Site'}}>
+            <button type="button" className="btn btn-info btn-lg">
+              Contact Me
+            </button>
+          </Obfuscate>
+        </div>
       </main>
+
+      {showButton && (
+        <button onClick={scrollToTop} className="back-to-top">
+          Back to Top &#8679;
+        </button>
+      )}
     </>
   );
 };
