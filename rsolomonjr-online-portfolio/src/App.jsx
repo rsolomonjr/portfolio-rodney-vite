@@ -36,32 +36,6 @@ const App = () => {
     });
   };  
 
-  const [addPadding, setAddPadding] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-
-  const fixAnchor = () => {
-    const projectsElement = document.getElementById('projects');
-
-    if (projectsElement) {
-      setAddPadding(true);
-      window.scrollTo({
-        top: projectsElement.offsetTop,
-        behavior: 'smooth',
-      });
-    }
-  };
-
-
-  const projectsStyle = {
-    paddingBottom: addPadding ? '8em' : '0',
-  };
-
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-    setAddPadding(false); // Remove the margin when the menu is toggled
-  };
-
   return (
     <>
       <main className="pb-5">
@@ -78,7 +52,6 @@ const App = () => {
               aria-controls="navbarNavAltMarkup"
               aria-expanded="false"
               aria-label="Toggle navigation"
-              onClick={handleMenuToggle}
             >
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -87,8 +60,7 @@ const App = () => {
                 <a
                   className="nav-link"
                   aria-current="page"
-                  href="#projects" 
-                  onClick={fixAnchor}
+                  href="/#projects" 
                 >
                   Projects
                 </a>
@@ -99,12 +71,6 @@ const App = () => {
                 >
                   Contact Me
                 </a>
-                {/* <a className="nav-link" href="#">
-                  About Me 
-                </a>
-                <a className="nav-link" href="#">
-                  Resume
-                </a> */}
               </div>
             </div>
           </div>
@@ -191,7 +157,7 @@ const App = () => {
         </div>
 
         {/* Projects */}
-        <div id="projects" className="mb-2" style={projectsStyle}>&nbsp;</div>
+        <div id="projects" className="mb-2">&nbsp;</div>
         <div className="row">
           <h1 className="mt-0">Projects</h1>
           <div className="col-sm-6">
