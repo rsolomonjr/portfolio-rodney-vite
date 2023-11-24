@@ -10,9 +10,9 @@ import yolanda from "./assets/yolanda-solomon-site.png";
 import starter_tool from "./assets/infosite-starter-tool.png";
 import rodneyheadshot from "./assets/rodney.jpg";
 
-import Obfuscate from 'react-obfuscate';
-
 import { useEffect, useState } from "react";
+
+import { Email } from "react-obfuscate-email";
 
 const App = () => {
   const [showButton, setShowButton] = useState(false);
@@ -290,11 +290,11 @@ const App = () => {
         {/* Contact Me */}
         <div id="contact"></div>
         <div className="mt-5 d-flex justify-content-center">
-        <Obfuscate email="contact@rodneysolomonjr.net" className="mx-auto"  headers={{cc: 'profession3x@yahoo.com',subject: 'Contact from Portfolio Site'}}>
+        <Email email="contact@rodneysolomonjr.net" className="mx-auto"  headers={{cc: 'profession3x@yahoo.com',subject: 'Contact from Portfolio Site'}}>
             <button type="button" className="btn btn-info btn-lg">
               Contact Me
             </button>
-          </Obfuscate>
+          </Email>
         </div>
       </main>
 
