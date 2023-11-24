@@ -7,6 +7,7 @@ import lighthouse from "./assets/light-house-haiit.png";
 import healingharm from "./assets/healingharm.png";
 import yolanda from "./assets/yolanda-solomon-site.png";
 import starter_tool from "./assets/infosite-starter-tool.png";
+import rodneyheadshot from "./assets/rodney.jpg"
 
 const App = () => {
   return (
@@ -38,10 +39,10 @@ const App = () => {
                   Projects
                 </a>
                 {/* <a className="nav-link" href="#">
-                  Recommendations
+                  About Me 
                 </a>
                 <a className="nav-link" href="#">
-                  Contact
+                  Resume
                 </a> */}
               </div>
             </div>
@@ -106,6 +107,23 @@ const App = () => {
             </li>
           </ul>
         </nav>
+        
+        {/* About Me */}
+
+        <div className="row justify-content-center mt-3">
+          <div className="col-lg-8 d-flex justify-content-around align-items-center">
+            <div className="headshot w-25">
+             <img src={rodneyheadshot} className="img-fluid img-thumbnail rounded-circle"/>
+            </div>
+            <div className="headshot-copy col-lg-6">
+              <h2>About Me</h2>
+              <p>I am a front end developer with ten years of experience in various industries. Having advanced to a Lead/SME, I am seeking full-time front end roles with the objective of advancing to a full-stack engineer.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Projects */}
+
         <div className="row">
           <h1>Projects</h1>
           <div className="col-sm-6">
