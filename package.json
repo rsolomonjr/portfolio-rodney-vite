@@ -10,7 +10,7 @@
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
+    "@types/node": "^20.9.5",
     "webpack": "^5.89.0"
-  },
-  "exclude": ["react-obfuscate"]
+  }
 }

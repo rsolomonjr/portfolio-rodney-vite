@@ -14,7 +14,6 @@ import Obfuscate from 'react-obfuscate';
 
 import { useEffect, useState } from "react";
 
-
 const App = () => {
   const [showButton, setShowButton] = useState(false);
 
