@@ -10,6 +10,8 @@ import yolanda from "./assets/yolanda-solomon-site.png";
 import starter_tool from "./assets/infosite-starter-tool.png";
 import rodneyheadshot from "./assets/rodney.jpg";
 
+import cv from "./assets/pdf/Rodney-Solomon-Jr___Frontend.pdf";
+
 import { useEffect, useState } from "react";
 
 import { Email } from "react-obfuscate-email";
@@ -55,7 +57,7 @@ const App = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div className="navbar-nav">
+              <div className="navbar-nav ">
                 <a
                   className="nav-link"
                   aria-current="page"
@@ -69,6 +71,9 @@ const App = () => {
                   href="/#contact"
                 >
                   Contact Me
+                </a>
+                <a href={cv} target="_blank" rel="noreferrer" className="nav-link">
+                <span>R&#233;sum&#233;</span>
                 </a>
               </div>
             </div>

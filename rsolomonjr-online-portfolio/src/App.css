@@ -61,6 +61,15 @@ main {
   padding: 1rem;
 }
 
+nav a span {
+  color: #000
+}
+
+nav a span:hover {
+  color: midnightblue;
+  font-weight: 700;
+}
+
 img {
 	-webkit-animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
 	        animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
