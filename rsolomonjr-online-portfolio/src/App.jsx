@@ -17,17 +17,6 @@ import { useEffect, useState } from "react";
 import { Email } from "react-obfuscate-email";
 
 const App = () => {
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    });
-  }, []);
 
   // This function will scroll the window to the top 
   const scrollToTop = () => {
@@ -42,7 +31,7 @@ const App = () => {
       <main className="pb-5">
         <nav className="navbar navbar-expand-lg bg-body-tertiary bd-navbar sticky-top">
           <div className="container-fluid">
-            <a className="navbar-brand">
+            <a className="navbar-brand" onClick={scrollToTop}>
               RS
             </a>
             <button
@@ -302,12 +291,6 @@ const App = () => {
           </Email>
         </div>
       </main>
-
-      {showButton && (
-        <button onClick={scrollToTop} className="back-to-top">
-          Back to Top &#8679;
-        </button>
-      )}
     </>
   );
 };
