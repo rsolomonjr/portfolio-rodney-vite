@@ -82,9 +82,7 @@ img {
   font-size: 10px;
   background: transparent;
   color: white;
-  border-radius: 25px;
   border: none;
-  box-shadow: 0 5px 10px #ccc;
 }
 
 .back-to-top:hover {
