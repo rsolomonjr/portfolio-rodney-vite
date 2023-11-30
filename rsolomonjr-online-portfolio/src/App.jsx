@@ -12,8 +12,6 @@ import rodneyheadshot from "./assets/rodney.jpg";
 
 import cv from "./assets/pdf/Rodney-Solomon-Jr___Frontend.pdf";
 
-import { useEffect, useState } from "react";
-
 import { Email } from "react-obfuscate-email";
 
 const App = () => {
