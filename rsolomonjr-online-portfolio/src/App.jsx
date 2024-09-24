@@ -292,7 +292,7 @@ const App = () => {
         <div id="contact"></div>
         <div className="mt-5 d-flex justify-content-center">
         <Email email="contact@rodneysolomonjr.net" className="mx-auto"  headers={{cc: 'profession3x@yahoo.com',subject: 'Contact from Portfolio Site'}}>
-            <button type="button" className="btn btn-info btn-lg">
+            <button type="button" className="btn btn-light btn-lg">
               Contact Me
             </button>
           </Email>
