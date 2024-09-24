@@ -83,7 +83,7 @@ const App = () => {
             </div>
           </div>
           <ul className="navbar-nav flex-row flex-wrap ms-md-auto me-3">
-            <li className="nav-item col-lg-4">
+            <li className="nav-item col-lg-5">
               <a
                 href="https://github.com/rsolomonjr"
                 target="_blank"
@@ -102,7 +102,7 @@ const App = () => {
                 </svg>
               </a>
             </li>
-            <li className="nav-item col-lg-4">
+            <li className="nav-item col-lg-5">
               <a
                 href="https://www.linkedin.com/in/rodneysolomonjr/"
                 target="_blank"
