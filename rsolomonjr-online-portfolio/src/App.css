@@ -12,7 +12,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: midnightblue;
+  background-color: #8B2433;
   color: #fff;
   display: block;
   overflow-x: hidden;
@@ -70,7 +70,7 @@ nav a span {
 }
 
 nav a span:hover {
-  color: midnightblue;
+  color:#8B2433;
   font-weight: 700;
 }
 
