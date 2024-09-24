@@ -24,6 +24,16 @@ const App = () => {
     });
   };  
 
+  const technologies = [
+    'React', 'JavaScript', 'jQuery',
+    'HTML', 'CSS', 'Git',
+    'JSON', 'JSP', 'Slick.js',
+    'JIRA', 'Microsoft Visio', 'WordPress',
+    'Joomla', 'Magento', 'Bootstrap',
+    'WooCommerce', 'PayPal', 'Jenkins',
+    'Figma', 'Visual Studio Code', 'Sketch'
+  ];
+
   return (
     <>
       <main className="pb-5">
@@ -51,6 +61,13 @@ const App = () => {
                   href="/#projects" 
                 >
                   Projects
+                </a>
+                <a
+                  className="nav-link"
+                  aria-current="page"
+                  href="/#skills" 
+                >
+                  Skills
                 </a>
                 <a
                   className="nav-link"
@@ -127,8 +144,8 @@ const App = () => {
         </nav>
         {/* About Me */}
 
-        <div className="row justify-content-center mt-3 mb-3">
-          <div className="col-lg-8 d-flex justify-content-around align-items-center">
+        <div className="row justify-content-center mt-3 mb-0">
+          <div className="row d-flex justify-content-around align-items-center">
             <div className="headshot w-25">
               <img
                 src={rodneyheadshot}
@@ -136,21 +153,18 @@ const App = () => {
               />
             </div>
             <div className="headshot-copy col-lg-6">
-              <h2>About Me</h2>
-              <p>
-                I am a front end developer with ten years of experience in
-                various industries. Having advanced to a Lead/SME, I am seeking
-                full-time front end roles with the objective of advancing to a
-                full-stack engineer.
-              </p>
+              <h3>About Me</h3>
+              <p>At Medscape, my innovative solutions, such as significantly reducing application build time from five hours to ten minutes, earned the 2023 Top Innovator Award. This recognition underscores my commitment to enhancing efficiency and productivity within our development team. Utilizing my expertise in HTML5, CSS3, and JavaScript, I have streamlined processes, which has been tremendously beneficial for both junior developers and the quality assurance team.</p><p>My role as Product Lead has allowed me to train and support developers across multiple projects, including microsites, ads, and polling applications. I have also been instrumental in collaborating with the CSD and Template Delivery teams to optimize our products for reuse, ensuring consistent quality and performance. My dedication to web development and team enablement at Medscape reflects my professional ethos: to drive innovation and knowledge sharing within the tech industry.</p>           
             </div>
           </div>
         </div>
 
         {/* Projects */}
-        <div id="projects" className="mb-2">&nbsp;</div>
-        <div className="row">
-          <h1 className="mt-0">Projects</h1>
+        <div id="projects" className="mt-0">
+          &nbsp;
+        </div>
+        <h1 className="text-center">Projects</h1>
+        <div className="row">          
           <div className="col-sm-5">
             <div className="card">
               <a
@@ -278,6 +292,20 @@ const App = () => {
             </div>
           </div>
         </div>
+        {/* Skills*/}
+        <div id="skills">&nsbp;</div>
+        <h1 className="text-center">Skills</h1>
+        <div className="row row-cols-1 row-cols-md-3 g-4">
+      {technologies.map((tech, index) => (
+        <div className="col" key={index}>
+          <div className="card h-100">
+            <div className="card-body">
+              <h5 className="card-title">{tech}</h5>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
 
         {/* Contact Me */}
         <div id="contact"></div>

@@ -156,3 +156,8 @@ img {
     color: rgba(255, 255, 255, 0.5)
   }
 }
+
+.row {
+  display: flex;
+  justify-content: center;
+}
