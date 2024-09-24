@@ -293,7 +293,7 @@ const App = () => {
           </div>
         </div>
         {/* Skills*/}
-        <div id="skills">&nsbp;</div>
+        <div id="skills">&nbsp;</div>
         <h1 className="text-center">Skills</h1>
         <div className="row row-cols-1 row-cols-md-3 g-4">
       {technologies.map((tech, index) => (
