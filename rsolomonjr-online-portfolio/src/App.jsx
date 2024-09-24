@@ -9,6 +9,7 @@ import healingharm from "./assets/healingharm.png";
 import yolanda from "./assets/yolanda-solomon-site.png";
 import starter_tool from "./assets/infosite-starter-tool.png";
 import rodneyheadshot from "./assets/rodney.jpg";
+import adtech from "./assets/adtech.png";
 
 import cv from "./assets/pdf/Rodney-Solomon-Jr___Frontend.pdf";
 
@@ -151,7 +152,24 @@ const App = () => {
         <div id="projects" className="mb-2">&nbsp;</div>
         <div className="row">
           <h1 className="mt-0">Projects</h1>
-          <div className="col-sm-6">
+          <div className="col-sm-5">
+            <div className="card">
+              <a
+                href="https://github.com/rsolomonjr/fin-dashboard"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={adtech} />
+              </a>
+              <div className="card-body">
+                <h5 className="card-title">Ad Tech Demo</h5>
+                <p className="card-text">
+                  Ad Tech News, self-directed development with React, Next, and MaterialUI. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-5">
             <div className="card">
               <a
                 href="https://www.medscape.com/infosites/294239.3/public/"
@@ -167,27 +185,10 @@ const App = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="col-sm-6">
-            <div className="card">
-              <a
-                href="https://www.medscape.com/brandplay/389298.3/public"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={brandplay} alt="" />
-              </a>
-              <div className="card-body">
-                <h5 className="card-title">Medscape</h5>
-                <p className="card-text">
-                  Video site built with HTML, CSS, JSON, jQuery.
-                </p>
-              </div>
-            </div>
-          </div>
+          </div>          
         </div>
         <div className="row">
-          <div className="col-sm-6">
+          <div className="col-sm-5">
             <div className="card">
               <a
                 href="https://rsolomonjr.dev/starter.html"
@@ -204,7 +205,7 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-6">
+          <div className="col-sm-5">
             <div className="card">
               <a
                 href="https://yolandasolomon.site"
@@ -221,7 +222,7 @@ const App = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6">
+          <div className="col-sm-5">
             <div className="card">
               <a
                 href="https://www.thelighthousehaiti.org/"
@@ -239,7 +240,7 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-6">
+          <div className="col-sm-5">
             <div className="card">
               <a
                 href="https://www.healingharm.com/"
@@ -259,7 +260,7 @@ const App = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6">
+          <div className="col-sm-5">
             <div className="card">
               <img src={creamofthecrop} alt="" />
               <div className="card-body">
@@ -268,7 +269,7 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-6">
+          <div className="col-sm-5">
             <div className="card">
               <img src={longchamp} alt="" />
               <div className="card-body">
