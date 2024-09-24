@@ -161,3 +161,9 @@ img {
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 767px) {
+  .w-25 {
+    width: 50% !important;
+  } 
+}
