@@ -2,7 +2,6 @@ import "./App.css";
 
 import infosite from "./assets/infosite.jpeg";
 import creamofthecrop from "./assets/creamofthecrop.jpeg";
-import brandplay from "./assets/brandplay.jpeg";
 import longchamp from "./assets/longchamp.jpeg";
 import lighthouse from "./assets/light-house-haiit.png";
 import healingharm from "./assets/healingharm.png";
