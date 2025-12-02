@@ -10,7 +10,7 @@ import starter_tool from "./assets/infosite-starter-tool.png";
 import rodneyheadshot from "./assets/rodney.jpg";
 import adtech from "./assets/adtech.png";
 
-import cv from "./assets/pdf/Rodney Solomon - Software Engineer - Resume.pdf";
+import cv from "./assets/pdf/Rodney_Solomon.pdf";
 
 import { Email } from "react-obfuscate-email";
 
