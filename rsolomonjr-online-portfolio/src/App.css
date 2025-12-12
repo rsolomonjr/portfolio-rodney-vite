@@ -109,6 +109,15 @@ img {
   }
 }
 
+@keyframes fade-in-repositioned {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /* Make the cards break to a column at 990px */
 @media (max-width: 990px) {
@@ -180,6 +189,14 @@ img {
     pointer-events: none;
   }
 
+  ul.navbar-nav.repositioned {
+    right: 10px;
+    opacity: 1;
+    pointer-events: auto;
+    animation: fade-in-repositioned 0.5s ease-in-out;
+    padding: 0.75rem;
+  }
+
   .badge {
     font-size: 0.75rem;
     padding: 0.35rem 0.75rem;
@@ -188,6 +205,15 @@ img {
   .headshot-copy {
     text-align: left;
     padding: 1rem;
+  }
+
+  .navbar-toggler {
+    padding: 0;
+  }
+
+  ul.navbar-nav li a svg {
+    width: 20px;
+    height: 20px;
   }
 }
 

@@ -17,6 +17,7 @@ import { Email } from "react-obfuscate-email";
 
 const App = () => {
   const [shouldFadeOut, setShouldFadeOut] = useState(false);
+  const [isRepositioned, setIsRepositioned] = useState(false);
 
   // This function will scroll the window to the top
   const scrollToTop = () => {
@@ -38,27 +39,38 @@ const App = () => {
     }
   };
 
-  // Handle navbar fade-out after 10 seconds when hamburger menu is expanded
+  // Handle navbar fade-out after 3 seconds when hamburger menu is expanded
   useEffect(() => {
     const navbarCollapse = document.getElementById('navbarNavAltMarkup');
     let fadeOutTimer;
+    let repositionTimer;
 
     const handleShow = () => {
       // Reset fade-out state when menu opens
       setShouldFadeOut(false);
+      setIsRepositioned(false);
 
-      // Start 10-second timer
+      // Start 3-second timer
       fadeOutTimer = setTimeout(() => {
         setShouldFadeOut(true);
-      }, 10000);
+
+        // After fade-out animation completes (500ms), reposition and fade back in
+        repositionTimer = setTimeout(() => {
+          setIsRepositioned(true);
+        }, 500);
+      }, 3000);
     };
 
     const handleHide = () => {
-      // Clear timer and reset fade-out when menu closes
+      // Clear timers and reset states when menu closes
       if (fadeOutTimer) {
         clearTimeout(fadeOutTimer);
       }
+      if (repositionTimer) {
+        clearTimeout(repositionTimer);
+      }
       setShouldFadeOut(false);
+      setIsRepositioned(false);
     };
 
     if (navbarCollapse) {
@@ -74,6 +86,9 @@ const App = () => {
       }
       if (fadeOutTimer) {
         clearTimeout(fadeOutTimer);
+      }
+      if (repositionTimer) {
+        clearTimeout(repositionTimer);
       }
     };
   }, []);
@@ -170,7 +185,7 @@ const App = () => {
               </div>
             </div>
           </div>
-          <ul className={`navbar-nav flex-row flex-wrap ms-md-auto me-3 ${shouldFadeOut ? 'fade-out' : ''}`}>
+          <ul className={`navbar-nav flex-row flex-wrap ms-md-auto me-3 ${shouldFadeOut && !isRepositioned ? 'fade-out' : ''} ${isRepositioned ? 'repositioned' : ''}`}>
             <li className="nav-item col-lg-5">
               <a
                 href="https://github.com/rsolomonjr"
