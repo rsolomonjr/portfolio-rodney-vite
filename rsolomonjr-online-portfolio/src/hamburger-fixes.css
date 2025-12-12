@@ -3,14 +3,21 @@
    ================================ */
 
 @media screen and (max-width: 990px) {
+  /* Mobile nav sticky styling with rounded bottom corners and margin */
+  .navbar.sticky-top {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin: 0 -1em;
+  }
+
   /* Fix 1: Remove padding from hamburger menu container */
-  .navbar-collapse {
-    padding: 0 !important;
+  .navbar-collapse.collapse {
+    padding: 0;
   }
 
   /* Fix 1: Add padding only to menu items (heading text) */
   .navbar-collapse .navbar-nav .nav-link {
-    padding: 0.75rem 1rem !important;
+    padding: 0.75rem 1rem;
   }
 
   /* Fix 4: Round bottom left and right edges of hamburger menu on expand */
@@ -21,41 +28,41 @@
   }
 
   /* Fix 3: Move social icons to right side, parallel to hamburger button */
-  ul.navbar-nav.flex-row {
-    position: fixed !important;
-    top: 10px !important;
-    right: 60px !important;
-    bottom: auto !important;
-    left: auto !important;
-    background: transparent !important;
-    backdrop-filter: none !important;
-    padding: 0 !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    z-index: 1050 !important;
+  .navbar ul.navbar-nav.flex-row {
+    position: fixed;
+    top: 25%;
+    right: 60px;
+    bottom: auto;
+    left: auto;
+    background: transparent;
+    backdrop-filter: none;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    z-index: 1050;
   }
 
   /* Fix 3: Make social icons smaller */
-  ul.navbar-nav.flex-row svg {
-    width: 24px !important;
-    height: 24px !important;
+  .navbar ul.navbar-nav.flex-row svg {
+    width: 24px;
+    height: 24px;
   }
 
   /* Adjust icon colors for visibility on navbar background */
-  ul.navbar-nav.flex-row li a svg {
-    color: #8B2433 !important;
+  .navbar ul.navbar-nav.flex-row li a svg {
+    color: #8B2433;
   }
 
-  ul.navbar-nav.flex-row li a:hover svg {
-    color: #6B1825 !important;
+  .navbar ul.navbar-nav.flex-row li a:hover svg {
+    color: #6B1825;
   }
 
   /* Ensure icons don't overlap with Resume link */
-  ul.navbar-nav.flex-row {
+  .navbar ul.navbar-nav.flex-row {
     pointer-events: auto;
   }
 
-  ul.navbar-nav.flex-row li {
-    padding: 0 0.25rem !important;
+  .navbar ul.navbar-nav.flex-row li {
+    padding: 0 0.25rem;
   }
 }

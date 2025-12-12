@@ -40,26 +40,17 @@ const App = () => {
     }
   };
 
-  // Handle navbar fade-out after 3 seconds when hamburger menu is expanded
+  // Handle navbar fade-out immediately when hamburger menu is expanded
   useEffect(() => {
     const navbarCollapse = document.getElementById('navbarNavAltMarkup');
-    let fadeOutTimer;
 
     const handleShow = () => {
-      // Reset fade-out state when menu opens
-      setShouldFadeOut(false);
-
-      // Start 3-second timer
-      fadeOutTimer = setTimeout(() => {
-        setShouldFadeOut(true);
-      }, 3000);
+      // Fade out icons immediately when menu opens
+      setShouldFadeOut(true);
     };
 
     const handleHide = () => {
-      // Clear timer and reset fade-out when menu closes
-      if (fadeOutTimer) {
-        clearTimeout(fadeOutTimer);
-      }
+      // Reset fade-out when menu closes
       setShouldFadeOut(false);
     };
 
@@ -73,9 +64,6 @@ const App = () => {
       if (navbarCollapse) {
         navbarCollapse.removeEventListener('shown.bs.collapse', handleShow);
         navbarCollapse.removeEventListener('hidden.bs.collapse', handleHide);
-      }
-      if (fadeOutTimer) {
-        clearTimeout(fadeOutTimer);
       }
     };
   }, []);
