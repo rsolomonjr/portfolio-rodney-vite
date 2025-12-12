@@ -148,36 +148,21 @@ img {
     margin-bottom: 1rem;
   }
 
-  ul.navbar-nav {
-    position: fixed;
-    bottom: 5px;
-    right: 30%;
-    background: rgba(139, 36, 51, 0.9);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center;
-    padding: 0.5rem;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: opacity 0.5s ease-in-out;
+  /* Remove padding from hamburger dropdown */
+  .navbar-collapse {
+    padding: 0;
+    margin: 0;
   }
 
-  ul.navbar-nav li {
-    padding: 0 0.25em;
+  .navbar-collapse .navbar-nav {
+    padding: 0;
+    margin: 0;
   }
 
-  ul.navbar-nav li a,
-  ul.navbar-nav li a svg {
-    color: rgba(255, 255, 255, 0.9);
-  }
-
-  ul.navbar-nav li a:hover svg {
-    color: #FFD700;
-  }
-
-  ul.navbar-nav.fade-out {
-    opacity: 0;
-    pointer-events: none;
+  /* Add rounded corners to hamburger dropdown */
+  .navbar-collapse {
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
   }
 
   .badge {
@@ -322,4 +307,22 @@ section, .mt-5 {
 
 .text-muted {
   color: #666 !important;
+}
+
+/* Social icons at bottom */
+.social-icon-link {
+  color: #fff;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon-link:hover {
+  color: #FFD700;
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
 }
