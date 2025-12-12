@@ -113,6 +113,11 @@ img {
 /* Make the cards break to a column at 990px */
 @media (max-width: 990px) {
 
+  main {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
   .row {
     display: flex;
     flex-direction: column;
