@@ -1,0 +1,55 @@
+/* ================================
+   HAMBURGER MENU FIXES
+   ================================ */
+
+@media screen and (max-width: 768px) {
+  /* Main container fixes */
+  .mobile-nav {
+    /* Fix 1: Remove general padding */
+    padding: 0;
+    
+    /* Fix 4: Round bottom corners */
+    border-radius: 0 0 16px 16px;
+    overflow: hidden;
+    
+    /* Fix 2: Animation duration */
+    animation: fadeIn 3s ease-in-out;
+    
+    /* Fix 3: Proper stacking */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Fix 1: Padding only on h1/logo */
+  .mobile-nav h1,
+  .mobile-nav .logo,
+  .mobile-nav .site-title {
+    padding: 1em;
+  }
+
+  /* Navigation links */
+  .mobile-nav a,
+  .mobile-nav li {
+    padding: 0.75em 1.5em;
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* Fix 3: Social icons positioning */
+  .mobile-nav .social-icons {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: auto;
+  }
+}
+
+/* Fix 2: Keyframes if not already defined */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
