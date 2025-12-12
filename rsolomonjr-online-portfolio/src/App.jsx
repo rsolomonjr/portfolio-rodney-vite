@@ -1,4 +1,5 @@
 import "./App.css";
+import { useEffect, useState } from "react";
 
 import infosite from "./assets/infosite.jpeg";
 import creamofthecrop from "./assets/creamofthecrop.jpeg";
@@ -15,14 +16,55 @@ import cv from "./assets/pdf/Rodney_Solomon.pdf";
 import { Email } from "react-obfuscate-email";
 
 const App = () => {
+  const [shouldFadeOut, setShouldFadeOut] = useState(false);
 
-  // This function will scroll the window to the top 
+  // This function will scroll the window to the top
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth' // for smoothly scrolling
     });
-  };  
+  };
+
+  // Handle navbar fade-out after 10 seconds when hamburger menu is expanded
+  useEffect(() => {
+    const navbarCollapse = document.getElementById('navbarNavAltMarkup');
+    let fadeOutTimer;
+
+    const handleShow = () => {
+      // Reset fade-out state when menu opens
+      setShouldFadeOut(false);
+
+      // Start 10-second timer
+      fadeOutTimer = setTimeout(() => {
+        setShouldFadeOut(true);
+      }, 10000);
+    };
+
+    const handleHide = () => {
+      // Clear timer and reset fade-out when menu closes
+      if (fadeOutTimer) {
+        clearTimeout(fadeOutTimer);
+      }
+      setShouldFadeOut(false);
+    };
+
+    if (navbarCollapse) {
+      navbarCollapse.addEventListener('shown.bs.collapse', handleShow);
+      navbarCollapse.addEventListener('hidden.bs.collapse', handleHide);
+    }
+
+    // Cleanup
+    return () => {
+      if (navbarCollapse) {
+        navbarCollapse.removeEventListener('shown.bs.collapse', handleShow);
+        navbarCollapse.removeEventListener('hidden.bs.collapse', handleHide);
+      }
+      if (fadeOutTimer) {
+        clearTimeout(fadeOutTimer);
+      }
+    };
+  }, []);
 
   const skillCategories = {
     'Frontend Development': [
@@ -111,7 +153,7 @@ const App = () => {
               </div>
             </div>
           </div>
-          <ul className="navbar-nav flex-row flex-wrap ms-md-auto me-3">
+          <ul className={`navbar-nav flex-row flex-wrap ms-md-auto me-3 ${shouldFadeOut ? 'fade-out' : ''}`}>
             <li className="nav-item col-lg-5">
               <a
                 href="https://github.com/rsolomonjr"

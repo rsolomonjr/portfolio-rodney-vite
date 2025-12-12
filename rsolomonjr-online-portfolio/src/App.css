@@ -145,7 +145,7 @@ img {
 
   ul.navbar-nav {
     position: fixed;
-    bottom: 1px;
+    bottom: 5px;
     right: 30%;
     background: rgba(139, 36, 51, 0.9);
     backdrop-filter: blur(10px);
@@ -154,6 +154,7 @@ img {
     padding: 0.5rem;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.5s ease-in-out;
   }
 
   ul.navbar-nav li {
@@ -167,6 +168,11 @@ img {
 
   ul.navbar-nav li a:hover svg {
     color: #FFD700;
+  }
+
+  ul.navbar-nav.fade-out {
+    opacity: 0;
+    pointer-events: none;
   }
 
   .badge {
