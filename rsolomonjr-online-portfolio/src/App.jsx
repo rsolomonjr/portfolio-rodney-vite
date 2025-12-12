@@ -286,23 +286,6 @@ const App = () => {
           <div className="col-sm-5">
             <div className="card">
               <a
-                href="https://yolandasolomon.site"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={yolanda} alt="" />
-              </a>
-              <div className="card-body">
-                <h5 className="card-title">Yolanda Solomon</h5>
-                <p className="card-text">WordPress site.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-5">
-            <div className="card">
-              <a
                 href="https://www.thelighthousehaiti.org/"
                 target="_blank"
                 rel="noreferrer"
@@ -318,6 +301,8 @@ const App = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="row">          
           <div className="col-sm-5">
             <div className="card">
               <a
@@ -336,8 +321,6 @@ const App = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="row">
           <div className="col-sm-5">
             <div className="card">
               <img src={creamofthecrop} alt="" />
@@ -347,6 +330,8 @@ const App = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="row">          
           <div className="col-sm-5">
             <div className="card">
               <img src={longchamp} alt="" />
