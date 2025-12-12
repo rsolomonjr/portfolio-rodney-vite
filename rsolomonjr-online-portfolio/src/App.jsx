@@ -26,6 +26,18 @@ const App = () => {
     });
   };
 
+  // Handle menu item click - close menu after 1 second
+  const handleMenuItemClick = () => {
+    const navbarCollapse = document.getElementById('navbarNavAltMarkup');
+    const bsCollapse = window.bootstrap?.Collapse?.getInstance(navbarCollapse);
+
+    if (bsCollapse) {
+      setTimeout(() => {
+        bsCollapse.hide();
+      }, 1000);
+    }
+  };
+
   // Handle navbar fade-out after 10 seconds when hamburger menu is expanded
   useEffect(() => {
     const navbarCollapse = document.getElementById('navbarNavAltMarkup');
@@ -116,6 +128,7 @@ const App = () => {
                   className="nav-link"
                   aria-current="page"
                   href="/#projects"
+                  onClick={handleMenuItemClick}
                 >
                   Projects
                 </a>
@@ -123,6 +136,7 @@ const App = () => {
                   className="nav-link"
                   aria-current="page"
                   href="/#experience"
+                  onClick={handleMenuItemClick}
                 >
                   Experience
                 </a>
@@ -130,6 +144,7 @@ const App = () => {
                   className="nav-link"
                   aria-current="page"
                   href="/#awards"
+                  onClick={handleMenuItemClick}
                 >
                   Awards
                 </a>
@@ -137,6 +152,7 @@ const App = () => {
                   className="nav-link"
                   aria-current="page"
                   href="/#skills"
+                  onClick={handleMenuItemClick}
                 >
                   Skills
                 </a>
@@ -144,10 +160,11 @@ const App = () => {
                   className="nav-link"
                   aria-current="page"
                   href="/#contact"
+                  onClick={handleMenuItemClick}
                 >
                   Contact
                 </a>
-                <a href={cv} target="_blank" rel="noreferrer" className="nav-link">
+                <a href={cv} target="_blank" rel="noreferrer" className="nav-link" onClick={handleMenuItemClick}>
                 <span>R&#233;sum&#233;</span>
                 </a>
               </div>
