@@ -2,54 +2,60 @@
    HAMBURGER MENU FIXES
    ================================ */
 
-@media screen and (max-width: 768px) {
-  /* Main container fixes */
-  .mobile-nav {
-    /* Fix 1: Remove general padding */
-    padding: 0;
-    
-    /* Fix 4: Round bottom corners */
+@media screen and (max-width: 990px) {
+  /* Fix 1: Remove padding from hamburger menu container */
+  .navbar-collapse {
+    padding: 0 !important;
+  }
+
+  /* Fix 1: Add padding only to menu items (heading text) */
+  .navbar-collapse .navbar-nav .nav-link {
+    padding: 0.75rem 1rem !important;
+  }
+
+  /* Fix 4: Round bottom left and right edges of hamburger menu on expand */
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing {
     border-radius: 0 0 16px 16px;
     overflow: hidden;
-    
-    /* Fix 2: Animation duration */
-    animation: fadeIn 3s ease-in-out;
-    
-    /* Fix 3: Proper stacking */
-    display: flex;
-    flex-direction: column;
   }
 
-  /* Fix 1: Padding only on h1/logo */
-  .mobile-nav h1,
-  .mobile-nav .logo,
-  .mobile-nav .site-title {
-    padding: 1em;
+  /* Fix 3: Move social icons to right side, parallel to hamburger button */
+  ul.navbar-nav.flex-row {
+    position: fixed !important;
+    top: 10px !important;
+    right: 60px !important;
+    bottom: auto !important;
+    left: auto !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    z-index: 1050 !important;
   }
 
-  /* Navigation links */
-  .mobile-nav a,
-  .mobile-nav li {
-    padding: 0.75em 1.5em;
-    display: block;
-    position: relative;
-    z-index: 10;
+  /* Fix 3: Make social icons smaller */
+  ul.navbar-nav.flex-row svg {
+    width: 24px !important;
+    height: 24px !important;
   }
 
-  /* Fix 3: Social icons positioning */
-  .mobile-nav .social-icons {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    margin-top: auto;
+  /* Adjust icon colors for visibility on navbar background */
+  ul.navbar-nav.flex-row li a svg {
+    color: #8B2433 !important;
   }
-}
 
-/* Fix 2: Keyframes if not already defined */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  ul.navbar-nav.flex-row li a:hover svg {
+    color: #6B1825 !important;
+  }
+
+  /* Ensure icons don't overlap with Resume link */
+  ul.navbar-nav.flex-row {
+    pointer-events: auto;
+  }
+
+  ul.navbar-nav.flex-row li {
+    padding: 0 0.25rem !important;
+  }
 }

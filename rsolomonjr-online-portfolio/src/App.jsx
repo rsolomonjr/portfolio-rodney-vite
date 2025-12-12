@@ -40,7 +40,7 @@ const App = () => {
     }
   };
 
-  // Handle navbar fade-out after 10 seconds when hamburger menu is expanded
+  // Handle navbar fade-out after 3 seconds when hamburger menu is expanded
   useEffect(() => {
     const navbarCollapse = document.getElementById('navbarNavAltMarkup');
     let fadeOutTimer;
@@ -49,10 +49,10 @@ const App = () => {
       // Reset fade-out state when menu opens
       setShouldFadeOut(false);
 
-      // Start 10-second timer
+      // Start 3-second timer
       fadeOutTimer = setTimeout(() => {
         setShouldFadeOut(true);
-      }, 10000);
+      }, 3000);
     };
 
     const handleHide = () => {
