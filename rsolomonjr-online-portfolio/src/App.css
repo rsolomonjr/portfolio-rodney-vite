@@ -145,8 +145,8 @@ img {
 
   ul.navbar-nav {
     position: fixed;
-    bottom: 10px;
-    right: 0;
+    bottom: 1px;
+    right: 30%;
     background: rgba(139, 36, 51, 0.9);
     backdrop-filter: blur(10px);
     display: flex;
@@ -229,6 +229,8 @@ h1 {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .navbar-brand {
