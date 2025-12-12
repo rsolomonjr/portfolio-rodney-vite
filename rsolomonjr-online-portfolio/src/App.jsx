@@ -220,7 +220,7 @@ const App = () => {
           <div className="col-sm-5">
             <div className="card">
               <a
-                href="https://rsolomonjr.dev/starter.html"
+                href="https://github.com/rsolomonjr/infosite-starter-kit"
                 target="_blank"
                 rel="noreferrer"
               >
