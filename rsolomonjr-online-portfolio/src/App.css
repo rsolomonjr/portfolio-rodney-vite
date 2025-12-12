@@ -286,6 +286,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Offset anchor links to account for sticky navbar */
+#projects,
+#experience,
+#awards,
+#skills,
+#contact {
+  scroll-margin-top: 80px;
+}
+
 /* Section spacing */
 section, .mt-5 {
   margin-top: 4rem !important;
