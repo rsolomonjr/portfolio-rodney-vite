@@ -30,7 +30,7 @@
   /* Fix 3: Move social icons to right side, parallel to hamburger button */
   .navbar ul.navbar-nav.flex-row {
     position: fixed;
-    top: 25%;
+    top: 1rem;
     right: 60px;
     bottom: auto;
     left: auto;
