@@ -149,6 +149,14 @@ const App = () => {
                 <a
                   className="nav-link"
                   aria-current="page"
+                  href="/#linkedin"
+                  onClick={handleMenuItemClick}
+                >
+                  From LinkedIn
+                </a>
+                <a
+                  className="nav-link"
+                  aria-current="page"
                   href="/#contact"
                   onClick={handleMenuItemClick}
                 >
@@ -475,6 +483,17 @@ const App = () => {
             </div>
           </div>
         ))}
+
+        {/* From LinkedIn */}
+        <div id="linkedin" className="mt-5">
+          &nbsp;
+        </div>
+        <h1 className="text-center mb-4">From LinkedIn</h1>
+        <div className="row justify-content-center">
+          <div className="col-lg-10">
+            <div className="sk-ww-linkedin-profile-post" data-embed-id="25633051"></div>
+          </div>
+        </div>
 
         {/* Contact Me */}
         <div id="contact"></div>
