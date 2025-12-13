@@ -189,6 +189,12 @@ img {
     text-align: left;
     padding: 1rem;
   }
+
+  /* Work Experience Cards - left align text on mobile */
+  #experience .text-muted,
+  #experience .mb-2 {
+    text-align: left;
+  }
 }
 
 .row {
