@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "title": "Welcome to My Blog",
+    "date": "2025-12-13",
+    "excerpt": "This blog syncs with my LinkedIn posts. Stay tuned for insights on web development, AI-powered tools, and frontend engineering.",
+    "content": "Welcome to my blog! This space will feature content synced from my LinkedIn posts, where I share insights about web development, AI-powered tools, frontend engineering, and my experiences in the tech industry.\n\nAs a Sr. Manager and B2B Web Developer at Dow Jones, I'm passionate about leveraging modern technologies like React, JavaScript, and AI tools such as GitHub Copilot and Claude to create innovative solutions.\n\nStay tuned for more content!",
+    "linkedinUrl": "https://www.linkedin.com/in/rodneysolomonjr/",
+    "tags": ["Web Development", "AI", "Frontend"]
+  }
+]
