@@ -152,7 +152,7 @@ const App = () => {
                   href="/#linkedin"
                   onClick={handleMenuItemClick}
                 >
-                  From LinkedIn
+                  Blog
                 </a>
                 <a
                   className="nav-link"
@@ -365,7 +365,7 @@ const App = () => {
                     <h5 className="card-title mb-1">Sr. Manager, B2B Web Developer</h5>
                     <h6 className="text-muted">Dow Jones</h6>
                   </div>
-                  <span className="badge bg-primary">2018 - Present</span>
+                  <span className="badge bg-primary">Dec 2024 - Present</span>
                 </div>
                 <ul className="mb-2">
                   <li>Recipient of the 2025 Global Impact & Operational Excellence Award</li>
@@ -382,7 +382,7 @@ const App = () => {
                     <h5 className="card-title mb-1">Frontend Engineer</h5>
                     <h6 className="text-muted">Medscape / WebMD</h6>
                   </div>
-                  <span className="badge bg-primary">2018 - Recent</span>
+                  <span className="badge bg-primary">May 2018 - Dec 2024</span>
                 </div>
                 <ul className="mb-2">
                   <li>Winner of 2023 Top Innovator Award for reducing build time from 5 hours to 10 minutes</li>
@@ -400,7 +400,7 @@ const App = () => {
                     <h5 className="card-title mb-1">DevOps Engineer</h5>
                     <h6 className="text-muted">Verisk Analytics</h6>
                   </div>
-                  <span className="badge bg-primary">2016 - 2018</span>
+                  <span className="badge bg-primary">Aug 2016 - Jan 2018</span>
                 </div>
                 <ul className="mb-2">
                   <li>Optimized performance of 9 high-traffic websites, including flagship site with 600K monthly visitors</li>
@@ -417,7 +417,7 @@ const App = () => {
                     <h5 className="card-title mb-1">Frontend Developer</h5>
                     <h6 className="text-muted">Zerve</h6>
                   </div>
-                  <span className="badge bg-primary">2013 - 2016</span>
+                  <span className="badge bg-primary">Jun 2013 - Mar 2016</span>
                 </div>
                 <ul className="mb-2">
                   <li>Developed e-commerce solutions across WordPress, Joomla, and Magento platforms</li>
