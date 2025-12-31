@@ -207,6 +207,26 @@ const App = () => {
                 </svg>
               </a>
             </li>
+            <li className="nav-item col-lg-5">
+              <a
+                href="https://www.fiverr.com/s/42wmz0k"
+                target="_blank"
+                rel="noreferrer"
+                className="nav-link"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  className="bi bi-fiverr"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M6 13c.5 0 .5-.5.5-.5V8h3v4.5s0 .5.5.5h2s.5 0 .5-.5v-7h1.5s.5 0 .5-.5v-1s0-.5-.5-.5H10v-.5s0-.5-.5-.5h-2s-.5 0-.5.5V3H4.5s-.5 0-.5.5v1s0 .5.5.5H6v7.5s0 .5.5.5z"/>
+                  <path d="M2.5 4h-2s-.5 0-.5.5v1s0 .5.5.5h2s.5 0 .5-.5v-1s0-.5-.5-.5"/>
+                </svg>
+              </a>
+            </li>
           </ul>
         </nav>
         {/* About Me */}
