@@ -215,8 +215,8 @@ const App = () => {
                 className="nav-link"
               >
                 <svg
-                  width="30"
-                  height="30"
+                  width="60"
+                  height="60"
                   viewBox="0 0 89 27"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
