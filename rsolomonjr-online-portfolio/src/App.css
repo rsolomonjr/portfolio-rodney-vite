@@ -252,7 +252,8 @@ h1 {
 /* Desktop navbar styling */
 @media (min-width: 991px) {
   .navbar-nav {
-    margin-right: 3em;
+    margin-right: 3em !important;
+	align-items: center  
   }
 }
 
@@ -334,4 +335,10 @@ section, .mt-5 {
 
 .text-muted {
   color: #666 !important;
+}
+
+/* fiverr */
+
+.navbar-nav li.nav-item:nth-of-type(3) {
+	width: 60px !important
 }
