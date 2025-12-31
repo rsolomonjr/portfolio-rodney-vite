@@ -339,6 +339,6 @@ section, .mt-5 {
 
 /* fiverr */
 
-.navbar-nav li.nav-item:nth-of-type(3) {
+.navbar-nav li.nav-item:nth-of-type(3) svg {
 	width: 60px !important
 }
