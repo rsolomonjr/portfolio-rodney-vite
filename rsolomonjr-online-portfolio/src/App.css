@@ -344,6 +344,6 @@ section, .mt-5 {
 }
 
 /* mobile */
-.mb-2 ul {
+.card-body ul {
 	text-align: left !important;
 }
