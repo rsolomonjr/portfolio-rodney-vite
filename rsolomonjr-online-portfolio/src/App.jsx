@@ -209,7 +209,7 @@ const App = () => {
             </li>
             <li className="nav-item col-lg-auto">
               <a
-                href="https://www.fiverr.com/s/42wmz0k"
+                href="https://www.fiverr.com/s/BRzlrv7"
                 target="_blank"
                 rel="noreferrer"
                 className="nav-link"
