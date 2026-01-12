@@ -342,3 +342,8 @@ section, .mt-5 {
 .navbar-nav li.nav-item:nth-of-type(3) svg {
 	width: 60px !important
 }
+
+/* mobile */
+.mb-2 ul {
+	text-align: left !important;
+}
