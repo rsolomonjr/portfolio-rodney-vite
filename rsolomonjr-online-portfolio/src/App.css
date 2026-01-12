@@ -344,6 +344,10 @@ section, .mt-5 {
 }
 
 /* mobile */
-.card-body ul {
+.card-body, .card-body ul {
 	text-align: left !important;
+}
+
+.sk-ww-linkedin-profile-post {
+	padding: 1em
 }
