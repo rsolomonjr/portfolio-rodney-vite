@@ -12,6 +12,7 @@ import yolanda from "./assets/yolanda-solomon-site.png";
 import starter_tool from "./assets/infosite-starter-tool.png";
 import rodneyheadshot from "./assets/rodney.jpg";
 import adtech from "./assets/adtech.png";
+import dowjones from "./assets/dowjones.png";
 
 import cv from "./assets/pdf/Rodney_Solomon.pdf";
 
@@ -362,13 +363,30 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="row">          
+        <div className="row">
           <div className="col-sm-5">
             <div className="card">
               <img src={longchamp} alt="" />
               <div className="card-body">
                 <h5 className="card-title">Longchamp Charities</h5>
                 <p className="card-text">Wordpress site.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-5">
+            <div className="card">
+              <a
+                href="https://www.dowjones.com/professional/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={dowjones} alt="Dow Jones" />
+              </a>
+              <div className="card-body">
+                <h5 className="card-title">Dow Jones</h5>
+                <p className="card-text">
+                  DowJones.com/Professional WordPress site redesign
+                </p>
               </div>
             </div>
           </div>
